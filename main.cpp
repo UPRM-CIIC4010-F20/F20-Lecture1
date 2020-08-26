@@ -3,18 +3,17 @@
 
 using namespace std;
 
-int main() {
+static double getArea(double s1, double s2, double s3)
+{
+  double s = (s1 + s2 + s3) / 2.0;
+  double area = sqrt(s * (s - s1) * (s - s2) * (s - s3));
+  return area;
+}
 
-  double side1 = 10.0;
-  double side2 = 10.0;
-  double side3 = 10.0;
-
-  double s = (side1 + side2 + side3) / 2.0;
-
-  double area = sqrt(s * (s-side1) * (s-side2) * (s-side3));
-
-  cout << area << endl;
-
+int main()
+{
+  cout << "Area 1: " << getArea(10.0, 10.0, 10.0) << endl;
+  cout << "Area 2: " << getArea(20.0, 20.0, 20.0) << endl;
+  cout << "Area 3: " << getArea(10.0, 20.0, 29.0) << endl;
   return 0;
-  
 }
