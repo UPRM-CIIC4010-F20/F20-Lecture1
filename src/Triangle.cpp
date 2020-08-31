@@ -1,7 +1,6 @@
 #include <math.h>
 #include "Triangle.h"
 
-
 double Triangle::getArea()
 {
     double s = (this->side1 + this->side2 + this->side3) / 2.0;
