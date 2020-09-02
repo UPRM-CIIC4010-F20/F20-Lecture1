@@ -26,6 +26,8 @@ using namespace std;
 
 int main()
 {
+ 
+  // Here we are testing some functions created in class
 
   Triangle *t1 = new Triangle(10.0, 10.0, 10.0);
   cout << "Area 1: " << t1->getArea() << endl;
@@ -36,6 +38,8 @@ int main()
 
   Triangle *triangleList[] = { t1, t2, t3 };
   cout << "Area total: " << Triangle::sumAreas(triangleList, 3) << endl;
+
+  cout << "t1 is equilateral ? " << (Triangle::isEquilateral(t1) ? "true" : "false") << endl;
 
   return 0;
 }

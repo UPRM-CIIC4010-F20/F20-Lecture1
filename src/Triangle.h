@@ -40,4 +40,10 @@ public:
         }
         return sum;
     }
+
+    static bool isEquilateral(Triangle* triangle){
+
+        return triangle->getSide1() == triangle->getSide2() 
+                && triangle->getSide1() == triangle->getSide3();
+    }
 };
