@@ -36,7 +36,7 @@ public:
     {
         double sum = 0.0;
         for(int i=0; i<numTriangles; i++) {
-            sum = sum + triangles[i]->getArea();
+            sum += triangles[i]->getArea();
         }
         return sum;
     }
