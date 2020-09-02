@@ -1,0 +1,6 @@
+obj/main.o
+Triangle.d
+main.d
+triangles
+obj/Triangle.o
+.DS_Store
