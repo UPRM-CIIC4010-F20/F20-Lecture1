@@ -34,5 +34,8 @@ int main()
   Triangle *t3 = new Triangle(10.0, 20.0, 29.0);
   cout << "Area 3: " << t3->getArea() << endl;
 
+  Triangle *triangleList[] = { t1, t2, t3 };
+  cout << "Area total: " << Triangle::sumAreas(triangleList, 3) << endl;
+
   return 0;
 }
