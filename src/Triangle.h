@@ -29,6 +29,8 @@ public:
 
     // Instances methods
     double getArea();
+    void enlarge(double factor);
+    void enlarge();
 
     // Static methods
     static double sumAreas(Triangle *triangles[], int numTriangles)
