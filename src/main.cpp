@@ -24,6 +24,7 @@ using namespace std;
 
 // }
 
+
 int main()
 {
  
@@ -38,6 +39,13 @@ int main()
 
   Triangle *triangleList[] = { t1, t2, t3 };
   cout << "Area total: " << Triangle::sumAreas(triangleList, 3) << endl;
+
+  t1->enlarge(3);
+  cout << "Area 1 Enlarged: " << t1->getArea() << endl;
+
+  t1->enlarge();
+  cout << "Area 1 Enlarged: " << t1->getArea() << endl;
+
 
   cout << "t1 is equilateral ? " << (Triangle::isEquilateral(t1) ? "true" : "false") << endl;
 
