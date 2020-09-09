@@ -33,3 +33,16 @@ bool Triangle::isLargerThan(Triangle t)
   return (this->getArea() > t.getArea());
 
 }
+
+int Triangle::compareTo(Triangle t)
+{
+  if (this->getArea() > t.getArea()) {
+    return 1;
+  }
+  else if (this->getArea() < t.getArea()) {
+    return -1;
+  }
+  else {
+    return 0;
+  }
+}
