@@ -31,6 +31,7 @@ public:
     double getArea();
     void enlarge(double factor);
     void enlarge();
+    Triangle enlargeNew(double factor);
 
     // Static methods
     static double sumAreas(Triangle *triangles[], int numTriangles)

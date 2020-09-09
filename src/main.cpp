@@ -49,5 +49,8 @@ int main()
 
   cout << "t1 is equilateral ? " << (Triangle::isEquilateral(t1) ? "true" : "false") << endl;
 
+  Triangle t4 = t1->enlargeNew(4.0);
+  cout << "Area 4 Enlarged: " << t4.getArea() << endl;
+
   return 0;
 }

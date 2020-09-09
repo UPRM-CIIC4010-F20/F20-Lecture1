@@ -17,3 +17,9 @@ void Triangle::enlarge()
 {
   this->enlarge(2.0);
 }
+
+Triangle Triangle::enlargeNew(double factor)
+{
+  Triangle result(this->getSide1()*factor,  this->getSide2()*factor, this->getSide3()*factor);
+  return result;
+}
