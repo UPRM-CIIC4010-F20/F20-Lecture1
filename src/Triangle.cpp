@@ -23,3 +23,13 @@ Triangle Triangle::enlargeNew(double factor)
   Triangle result(this->getSide1()*factor,  this->getSide2()*factor, this->getSide3()*factor);
   return result;
 }
+
+/* 
+  Returns true if and only if target Triangle has larger area than parameter Triangle
+  More information about method
+*/
+bool Triangle::isLargerThan(Triangle t)
+{
+  return (this->getArea() > t.getArea());
+
+}

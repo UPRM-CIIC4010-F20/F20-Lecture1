@@ -52,5 +52,7 @@ int main()
   Triangle t4 = t1->enlargeNew(4.0);
   cout << "Area 4 Enlarged: " << t4.getArea() << endl;
 
+  cout << t4.isLargerThan(*t1) << endl;
+
   return 0;
 }
